@@ -16,7 +16,6 @@ public class Game {
         Player player = new Player(name);
         System.out.println("Your name is " + name);
         System.out.println("You are starting at " + player.distance + "m.");
-        int paceChoice = 0;
         while (run){
             System.out.println(run);
             int choice = -1;
@@ -42,7 +41,6 @@ public class Game {
                         System.out.println("Enter a valid choice.");
                         choice = input.nextInt();
                     }
-                    System.out.println("AA");
                     switch(choice) {
                         case 1: 
                             choice = -1;
@@ -52,11 +50,11 @@ public class Game {
                                 System.out.println("Enter a valid choice.");
                                 choice = input.nextInt();
                             }
-                            if(choice == 1){
-                                player.pace = 1;
+                            if(choice == 0){
+                                player.pace = 0;
                                 System.out.println("Nice.");
                             }
-                            if(choice == 0){
+                            if(choice == 1){
                                 System.out.println("Okay.");
                             }
                             break;
@@ -67,11 +65,11 @@ public class Game {
                                 System.out.println("Enter a valid choice.");
                                 choice = input.nextInt();
                             }
-                            if(choice == 1){
-                                player.pace = 2;
+                            if(choice == 0){
+                                player.pace = 1;
                                 System.out.println("Nice.");
                             }
-                            if(choice == 0){
+                            if(choice == 1){
                                 System.out.println("Okay.");
                             }
                             break;
@@ -82,12 +80,11 @@ public class Game {
                                 System.out.println("Enter a valid choice.");
                                 choice = input.nextInt();
                             }
-                            if(choice == 1){
-                                System.out.println("BB");
+                            if(choice == 0){
                                 player.pace = 2;
                                 System.out.println("Nice.");
                             }
-                            if(choice == 0){
+                            if(choice == 1){
                                 System.out.println("Okay.");
                             }       
                             break;
