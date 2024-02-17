@@ -11,6 +11,8 @@ public class Game {
         pace.add(20);
         pace.add(30);
 
+        //hello
+
         System.out.println("What is your name?");
         String name = input.nextLine();
         Player player = new Player(name);
