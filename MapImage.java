@@ -1,7 +1,7 @@
 public class MapImage {
     public void Map() {
         System.out.println("        --_   |\\                                                                              __--       ");
-        System.out.println("           /_/   --_______                                                                   |   |       ");
+        System.out.println("       |   /_/   --_______                                                                   |   |       ");
         System.out.println("       |                  ----------____________                                       ___---     \\__    ");
         System.out.println("      /                            ^^           ---___        __                    _---       __/       ");
         System.out.println("     |                           ^^     ^^^            /___--__-/  _                /          /         ");
