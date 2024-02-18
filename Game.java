@@ -3,9 +3,10 @@ import java.util.Scanner;
 
 
 public class Game {
-    int RandomEventChance = 0;
 
     public static void main(String[] args)  throws InterruptedException{
+        double RandomEventChance = 0.0;
+
         Scanner input = new Scanner(System.in);
         boolean run = true;
         ArrayList<Integer> pace = new ArrayList<Integer>();
@@ -18,6 +19,8 @@ public class Game {
         shop.add("It's 11:58 as you're running to Worcester ($25)");
         shop.add("Cute UMass geese ($100, Mystery Effect ;) ");//buy this and lose health;
         
+
+        //START OF STORY
         System.out.println("...what?");
         Thread.sleep(1000);
         System.out.println("...How did I get here?");
@@ -41,6 +44,16 @@ public class Game {
                     System.out.println("You have chosen to continue.");
                     System.out.println("Travelling in progress...");
                     System.out.println(player.pace);
+                    //random event ***
+                    RandomEventChance = Math.random();
+                    System.out.println(RandomEventChance);
+                    if (RandomEventChance <= 0.3){
+                        RandomEvent n = new RandomEvent(player.eventLuckRizz, player.distance);
+                        player.distance = n.distance;
+                        System.out.println(n);
+                        System.out.println(player.distance);
+                    }
+                    //random event ***
                     System.out.println("You have advanced " + (pace.get(player.pace) + player.speed) + " mi." + " You are now at " + player.calculateDistance(pace.get(player.pace) + player.speed) + " mi.");
                     break;
                 case 2: //case for changing pace
