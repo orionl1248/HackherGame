@@ -7,6 +7,7 @@ public class Game {
     public static void main(String[] args)  throws InterruptedException{
         double RandomEventChance = 0.0;
         int WinningDistance = 100;
+        int HealthDrain = 1;
         Scanner input = new Scanner(System.in);
         boolean run = true;
         ArrayList<Integer> pace = new ArrayList<Integer>();
@@ -119,8 +120,19 @@ public class Game {
                         System.out.println(n);
                         System.out.println(player.distance);
                     }
+                    player.health += (-1*HealthDrain);
+                    Thread.sleep(1000);
                     //random event ***
                     System.out.println("You have advanced " + (pace.get(player.pace) + player.speed) + " mi." + " You are now at " + player.calculateDistance(pace.get(player.pace) + player.speed) + " mi.");
+                    if (player.health <= 0){
+                        System.out.println("Oops! Your health is 0 :(");
+                        System.out.println("Where's UHS when you need them?");
+                        Thread.sleep(1000);
+                        System.out.println("\nGood luck in Middle-America, Young Minuteman.");
+                        Thread.sleep(1000);
+                        System.out.println("...Maybe UUtah will adopt you?");
+                        run = false;
+                    }
                     break;
                 case 2: //case for changing pace
                     choice = -1;
@@ -134,6 +146,7 @@ public class Game {
                     switch(choice) {
                         case 1: 
                             choice = -1;
+                            HealthDrain = 1;
                             System.out.println("You have chosen the Chill pace. Are you sure? Press 0 for yes and 1 for no.");
 
                             while(choice <0 || choice > 1){
@@ -150,6 +163,7 @@ public class Game {
                             break;
                         case 2: 
                             choice = -1;
+                            HealthDrain = 3;
                             System.out.println("You have chosen the Normal pace. Are you sure? Press 0 for yes and 1 for no.");
                             while(choice <0 || choice > 1){
                                 System.out.println("Enter a valid choice.");
@@ -165,6 +179,7 @@ public class Game {
                             break;
                         case 3: 
                             choice = -1;
+                            HealthDrain = 6;
                             System.out.println("You have chosen the Debilitating pace. Are you sure? Press 0 for yes and 1 for no.");
                             while(choice <0 || choice > 1){
                                 System.out.println("Enter a valid choice.");
