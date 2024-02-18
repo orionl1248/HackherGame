@@ -253,11 +253,15 @@ public class Game {
             if(run){
                 System.out.println("\n\nW-O-W! What a journey.\n");
                 Thread.sleep(700);
-                System.out.println("I missed those Towers,");
+                System.out.println("I missed those cute campus pond ducks.");
                 Thread.sleep(900);
                 System.out.println("But not this weather.");
                 Thread.sleep(900);
                 SmallGooseAttack.firstGooseAttack();
+                System.out.println("AHHHH");
+                Thread.sleep(2000);
+                System.out.println("Where am I?");
+                System.out.println("Am I... \033[3min a hospital bed?\033[0m");
             }
         }
 
