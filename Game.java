@@ -7,6 +7,7 @@ public class Game {
     public static void main(String[] args)  throws InterruptedException{
         double RandomEventChance = 0.0;
         int WinningDistance = 2645;
+        int HealthDrain = 1;
         Scanner input = new Scanner(System.in);
         boolean run = true;
         ArrayList<Integer> pace = new ArrayList<Integer>();
