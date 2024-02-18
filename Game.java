@@ -46,6 +46,10 @@ public class Game {
         System.out.println("Gosh... What is my name?");
         String name = input.nextLine();
         Player player = new Player(name);
+
+        if (name.equals("cheat")){
+            WinningDistance = 0;
+        }
         System.out.println("OH yeah... \"" + name + "\" is on my ID. At least I still have that.");
         Thread.sleep(2500);
         System.out.println("No way I can get another plane ticket with this kind of money.");
@@ -295,14 +299,19 @@ public class Game {
                 System.out.println("AHHHH");
                 Thread.sleep(2000);
                 System.out.println("Where am I?");
-                Thread.sleep(500);
+                Thread.sleep(900);
 
                 System.out.println("Am I... \033[3min a hospital bed?\033[0m");
-                Thread.sleep(500);
+                Thread.sleep(900);
                 System.out.println("Wait... what is that?!?");
                 Thread.sleep(2000);
                 GooseAttack.finalGooseAttack();
-                System.out.println("\033[3m screams in horror\033[0m");
+                Thread.sleep(1000);
+                System.out.println("\033[3m screams\033[0m");
+                Thread.sleep(200);
+                System.out.println("\033[3m in\033[0m");
+                Thread.sleep(200);
+                System.out.println("\033[3m HORROR\033[0m");
 
 
 
