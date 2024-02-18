@@ -10,8 +10,12 @@ public class Game {
         pace.add(10);
         pace.add(20);
         pace.add(30);
-
-        //hello
+        ArrayList<String> shop = new ArrayList<String>();
+        shop.add("Cucumber Lemonade ($10)");
+        shop.add("Halloween Lobster ($20)");
+        shop.add("It's 11:58 as you're running to Worcester ($25)");
+        shop.add("Cute UMass geese ($100, Mystery Effect ;) ");//buy this and lose health;
+        
 
         System.out.println("What is your name?");
         String name = input.nextLine();
@@ -93,7 +97,14 @@ public class Game {
                     }
                     break;
                 case 3: //brings up shop, can buy powerups/vehicles, shows money as well
-                        
+                    System.out.println("Welcome to the Shop!");
+                    System.out.println("Here are the options: ");
+                    for (int i = 0; i < shop.size(); i++) {
+                        System.out.println("Item " + (i+1) + ": " + shop.get(i));
+                    }
+                    System.out.println("Do you want to buy anything? Enter the item number to buy it.");
+                    choice = -1;
+
                     break;
                 case 4: //case for exiting game
                     run = false;
