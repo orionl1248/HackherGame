@@ -4,6 +4,7 @@ Lore/text:
 - Starting Lore
 - Ending Lore
 - Instructions at beginning
+- Add pauses in the story
 
 Art:
 

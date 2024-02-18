@@ -21,17 +21,49 @@ public class Game {
         
 
         //START OF STORY
+        System.out.println("...ugh...");
+        Thread.sleep(1200);
+        System.out.println("**You wake up, head on the concrete, poker chips in hand, and your tie knotted around your forehead...**");
+        Thread.sleep(2550);
         System.out.println("...what?");
-        Thread.sleep(1000);
+        Thread.sleep(1200);
         System.out.println("...How did I get here?");
+        Thread.sleep(1200);
+        System.out.println("\033[3mP-POUND\033[0m");
+        Thread.sleep(300);
+        System.out.println("Ow... My head is pounding");
         Thread.sleep(1000);
+        System.out.println("Am I... \033[3mStill\033[0m in Vegas?\n");
+        Thread.sleep(1800);
+        System.out.println("Damn... I totally missed my flight. And... my wallet???");
+        Thread.sleep(2700);
+        System.out.println("...And a hundred dollar bill in my belt? What in the world did I get up to last night?");
+        Thread.sleep(2700);
+        System.out.println("\033[3mP-POUND\033[0m");
+        Thread.sleep(300);
+        System.out.println("");
         System.out.println("Gosh... What is my name?");
         String name = input.nextLine();
         Player player = new Player(name);
-        System.out.println("Your name is " + name);
-        System.out.println("You are starting at " + player.distance + "m.");
+        System.out.println("OH yeah... \"" + name + "\" is on my ID. At least I still have that.");
+        Thread.sleep(2500);
+        System.out.println("No way I can get another plane ticket with this kind of money.");
+        Thread.sleep(1800);
+        System.out.println("Well...");
+        Thread.sleep(500);
+        System.out.println("If the slots got me into this mess...");
+        Thread.sleep(1000);
+        System.out.println("...I bet they can get me out.");
+        Thread.sleep(2000);
+        System.out.println("What does that road sign say anyways?");
+        Thread.sleep(800);
+        System.out.println("Sign: \033[3m\"You are starting at " + player.distance + "m.\"\033[0m");
+        Thread.sleep(2700);
+        System.out.println("Damn...");
+        Thread.sleep(800);
+        System.out.println("And I thought the walk to Worcester was far.");
+        Thread.sleep(1000);
         while (run){
-            System.out.println(run);
             int choice = -1;
             System.out.println("Please Choose: Continue(1), Change Pace(2), Shop(3), Try your luck (4), Exit(5) ");
             choice = input.nextInt();
