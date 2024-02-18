@@ -1,5 +1,5 @@
 public class GooseAttack {
-    public void finalGooseAttack () {
+    public static void finalGooseAttack () {
         System.out.println("   |\\                                     ");
         System.out.println("  |  \\                                    ");
         System.out.println("  \\   \\                                   ");

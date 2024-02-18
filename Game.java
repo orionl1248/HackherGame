@@ -89,7 +89,7 @@ public class Game {
                 Thread.sleep(1000);
                 System.out.println("Option 4: Put your fate back in the hands of the lotto gods & spin to try to make it big");
                 Thread.sleep(1000);
-                System.out.println("Option 5: Give up & live in the midwest forever  \033[3m(ugh)\033[0m");
+                System.out.println("Option 5: Give up & live in the midwest forever \033[3m(ugh)\033[0m");
                 Thread.sleep(8000);
                 System.out.println("\nStrap on your hiking boots & Get ready!");
                 Thread.sleep(1000);
@@ -117,8 +117,6 @@ public class Game {
                     if (RandomEventChance <= 0.3){
                         RandomEvent n = new RandomEvent(player.eventLuckRizz, player.distance);
                         player.distance = n.distance;
-                        System.out.println(n);
-                        System.out.println(player.distance);
                     }
                     player.health += (-1*HealthDrain);
                     Thread.sleep(1000);
@@ -216,7 +214,9 @@ public class Game {
                         System.out.println("Enter a valid choice.");
                         choice = input.nextInt();
                     }
+
                     switch(choice){
+                        
                         case 1: 
                             System.out.println("You have purchased Cucumber Lemonade. You gain 9 health and pay $10.");
                             player.money = player.money -10;
@@ -239,7 +239,6 @@ public class Game {
                             
                             player.money = player.money -100;
                             player.health = 1;
-                            System.out.println(player.money);
                             break;   
                         case 5:
                             System.out.println("Leaving the shop...");
@@ -248,6 +247,7 @@ public class Game {
                         default:
                             System.out.println("Invalid input.");                
                     }
+                    System.out.println("You have $" + player.money + " to spend.");
                     break;
                 case 4: //slot case
                     System.out.println("How much money do you want to bet?");
@@ -287,7 +287,17 @@ public class Game {
                 System.out.println("AHHHH");
                 Thread.sleep(2000);
                 System.out.println("Where am I?");
+                Thread.sleep(500);
+
                 System.out.println("Am I... \033[3min a hospital bed?\033[0m");
+                Thread.sleep(500);
+                System.out.println("Wait... what is that?!?");
+                Thread.sleep(2000);
+                GooseAttack.finalGooseAttack();
+                System.out.println("\033[3m screams in horror\033[0m");
+
+
+
             }
         }
 
