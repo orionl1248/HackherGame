@@ -6,7 +6,7 @@ public class Game {
 
     public static void main(String[] args)  throws InterruptedException{
         double RandomEventChance = 0.0;
-
+        int WinningDistance = 100;
         Scanner input = new Scanner(System.in);
         boolean run = true;
         ArrayList<Integer> pace = new ArrayList<Integer>();
@@ -53,17 +53,53 @@ public class Game {
         Thread.sleep(500);
         System.out.println("If the slots got me into this mess...");
         Thread.sleep(1000);
-        System.out.println("...I bet they can get me out.");
+        System.out.println("...I bet they can get me out.\n");
         Thread.sleep(2000);
         System.out.println("What does that road sign say anyways?");
         Thread.sleep(800);
-        System.out.println("Sign: \033[3m\"You are starting at " + player.distance + "m.\"\033[0m");
+        System.out.println("Sign: \033[3m\"You are starting at " + player.distance + "m. You have "+ (WinningDistance-player.distance) + "m to go\"\033[0m");
         Thread.sleep(2700);
         System.out.println("Damn...");
         Thread.sleep(800);
         System.out.println("And I thought the walk to Worcester was far.");
         Thread.sleep(1000);
-        while (run){
+        System.out.println(".");
+        Thread.sleep(300);
+        System.out.println(".");
+        Thread.sleep(300);
+        System.out.println(".");
+        Thread.sleep(300);
+        System.out.println("Are you ready to begin?");
+        Thread.sleep(300);
+        int set = -1;
+        System.out.println("Instructions(1), Get started(2)");
+        set = input.nextInt();
+        switch(set){
+            case 1:
+                System.out.println("Hello.. This is the great goose of instructions here.");
+                Thread.sleep(800);
+                System.out.println("Your goal is to get back home to UMass before midterms \033[3m(they come up faster than you think)\033[0m");
+                Thread.sleep(1000);
+                System.out.println("Option 1: Continue on to make some walking progress. ");
+                Thread.sleep(1000);
+                System.out.println("Option 2: Walk a little faster, walk a little slower. ");
+                Thread.sleep(1000);
+                System.out.println("Option 3: Use your dwindling funds to speed up your trek. ");
+                Thread.sleep(1000);
+                System.out.println("Option 4: Put your fate back in the hands of the lotto gods & spin to try to make it big");
+                Thread.sleep(1000);
+                System.out.println("Option 5: Give up & live in the midwest forever  \033[3m(ugh)\033[0m");
+                Thread.sleep(1000);
+                System.out.println("Strap on your hiking boots & Type anything to continue!");
+                String useless = input.nextLine();
+                break;
+            case 2:
+                break;
+            default:
+                System.out.println("Invalid input.");  
+        }
+
+        while (run && player.distance<WinningDistance){
             int choice = -1;
             System.out.println("Please Choose: Continue(1), Change Pace(2), Shop(3), Try your luck (4), Exit(5) ");
             choice = input.nextInt();
@@ -171,7 +207,7 @@ public class Game {
                             player.health = player.health +24;
                             break;    
                         case 3: 
-                            System.out.println("You have purchased \"It's 11:58 as you're running to Worcester.\" You lose 1 health, gain 5 speed and pay $25.");
+                            System.out.println("You have purchased \"It's 11:58 as you're running to Late-Night Worcester.\" You lose 1 health, gain 5 speed and pay $25.");
                             player.money = player.money -20;
                             player.health = player.health -2;
                             player.speed = player.speed +5;
@@ -206,11 +242,21 @@ public class Game {
                     break;
                 case 5: //case for exiting game
                     run = false;
-                    System.out.println("Thanks for playing :D");
+                    System.out.println("Who needs UMass when you have UUtah? May not roll off the tongue as well, but you gave it your best shot! We hope to never see you again.");
+                    Thread.sleep(1000);
                     break;
                 default: //invalid input
                     System.out.println("Invalid input.");          
                 }
+            }
+
+            if(run){
+                System.out.println("W-O-W! What a journey.");
+                Thread.sleep(700);
+                System.out.println("I missed those Towers,");
+                Thread.sleep(900);
+                System.out.println("But not this weather.");
+                Thread.sleep(900);
             }
         }
 
