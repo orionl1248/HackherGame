@@ -15,10 +15,10 @@ public class Slot {
     int col1 = 0;
     int col2 = 0;
     int col3 = 0;
-    int output = input*constant;
+    int output = 0;
 
     Slot(int input){
-        input = this.input;
+        this.input = input;
 
         machine = new String[3];
         for(int i = 0; i<3; i++){
@@ -49,6 +49,14 @@ public class Slot {
         machine[0] = set_symbol(col1);
         machine[1] = set_symbol(col2);
         machine[2] = set_symbol(col3);
+
+        if (col1 == col2 && col1 == col3){
+            constant = 4;
+        }else if(col1==col2 || col1==col3 || col2==col3){
+            constant = 1;
+        }else{constant = 0;}
+
+        output = input*constant;
     }
 
     public String toString(){
