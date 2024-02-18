@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 
 public class Game {
@@ -23,7 +22,7 @@ public class Game {
         Thread.sleep(1000);
         System.out.println("...How did I get here?");
         Thread.sleep(1000);
-        System.out.println("What is your name?");
+        System.out.println("Gosh... What is my name?");
         String name = input.nextLine();
         Player player = new Player(name);
         System.out.println("Your name is " + name);

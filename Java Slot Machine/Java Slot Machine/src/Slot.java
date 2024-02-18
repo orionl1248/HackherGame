@@ -1,10 +1,10 @@
 
 public class Slot {
-    public static final String Cash = "$";
-    public static final String Fruit = "S";
-    public static final String Star = "A";
-    public static final String Spade = "B";
-    public static final String Clover = "C";
+    public static final String dollar = "$";
+    public static final String S = "S";
+    public static final String a = "A";
+    public static final String b = "B";
+    public static final String c = "C";
     public static final String Base = "?";
 
     String[] machine; 
@@ -27,15 +27,15 @@ public class Slot {
     public String set_symbol(int x){
         String s = "";
         if (x==0){
-            s = Cash;
+            s = dollar;
         }else if(x==1){
-            s = Fruit;
+            s = S;
         }else if(x==2){
-            s = Star;
+            s = a;
         }else if(x==3){
-            s = Spade;
+            s = b;
         }else if(x==4){
-            s = Clover;
+            s = c;
         }
         return s;
     }

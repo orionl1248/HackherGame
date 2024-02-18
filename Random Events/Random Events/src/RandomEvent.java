@@ -19,41 +19,41 @@ public class RandomEvent {
             multiplier = event4();
         }
 
-        this.distance = (int) (distance*multiplier);
+        this.distance = (int) (distance + .1*(distance*multiplier) + luck*);
     }
 
     private double event4() {
         System.out.println("Your current luck is: "+luck);
-        System.out.println("This is event 4");
+        System.out.println("Goose of Good Luck gives you a ride. You gain lots of distance!!");
         double x = 2;
         return x;
     }
 
     private double event3() {
         System.out.println("Your current luck is: "+luck);
-        System.out.println("This is event 3");
-        double x = 1.5;
+        System.out.println("Those van-life people sure were weird but they sure gave you a boost! You gain some distance!");
+        double x = 1;
         return x;
     }
 
     private double event2() {
         System.out.println("Your current luck is: "+luck);
-        System.out.println("This is event 2");
-        double x = 1;
+        System.out.println("How can google maps be so accurate? It may be uncanny, but it doesn't hurt or help your distance. Keep trucking on!");
+        double x = 0;
         return x;
     }
 
     private double event1() {
         System.out.println("Your current luck is: "+luck);
-        System.out.println("This is event 1");
-        double x = .5;
+        System.out.println("You absolutely HAD to try the worlds best BBQ! Who knew they kept good food like that in strip malls? You lose some distance.");
+        double x = -1;
         return x;
     }
 
     private double event0() {
         System.out.println("Your current luck is: "+luck);
-        System.out.println("This is event 0");
-        double x = 0;
+        System.out.println("Hey, don't be ashamed. Everyone joins a cult at one point or another. (You did lose lots of distance D:)");
+        double x = -2;
         return x;
     }
 
