@@ -3,9 +3,9 @@ public class MapImage {
         System.out.println("        --_   |\\                                                                              __--       ");
         System.out.println("       |   /_/   --_______                                                                   |   |       ");
         System.out.println("       |                  ----------____________                                       ___---     \\__    ");
-        System.out.println("      /                            ^^           ---___        __                    _---       __/       ");
+        System.out.println("      /                            ^^           ---___        __                     _---       __/       ");
         System.out.println("     |                           ^^     ^^^            /___--__-/  _                /          /         ");
-        System.out.println("    /           !  \\___/ !    ^^     ? ^^                      /  / \\_          __/   _ _   [E]|         ");
+        System.out.println("    /           !  \\___/ !    ^^     ? ^^                      /  / \\_        __/   _ _   [E]|         ");
         System.out.println("   |                             ^^^  ^^^^^                   |  |    |     ---     /    -_ _V  \\__--/   ");
         System.out.println("   |                  ?         ^^^^                $$        \\_/    /___/      ^  ^ - _     ----        ");
         System.out.println("   |                           ^^  ^  ^^   _ _                                  ^^^     |    _/          ");
