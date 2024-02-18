@@ -20,14 +20,7 @@ public class Player {
         moneyDebuff =1;
         eventLuckRizz = 1; //ew
     }
-    public void calculateMoney(boolean win, int bet){
-        if(win == false){
-            money = money-(bet*moneyDebuff);
-        }
-        if(win == true){
-            money = money + (bet*moneyBuff);
-        }
-    }
+    
     public int calculateDistance(int distance){
         this.distance = this.distance + distance;
         return this.distance;
