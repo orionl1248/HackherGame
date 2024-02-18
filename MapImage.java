@@ -9,7 +9,7 @@ public class MapImage {
         System.out.println("   |                             ^^^  ^^^^^                   |  |    |     ---    /_  -_ _V  \\__--/   ");
         System.out.println("   |                  ?         ^^^^                $$        \\_/    /___/      ^ ^  - _     ----        ");
         System.out.println("   |                           ^^  ^  ^^   _ _                                  ^^^     |  _/          ");
-        System.out.println("   |          ?           ^^^^  ^^^^   _ /    - -                          ?   ^^^     |  /              ");
+        System.out.println("   |          ?           ^^^^  ^^^^   _ /    - -                          ?   ^^^    /   /              ");
         System.out.println("    |                       $$   ^^^ /           \\             _ - - _ _ _ ^^   _ _ /    |              ");
         System.out.println("     |          [S]           _ _ /                |        _ -           \\ _ -         |               ");
         System.out.println("      |          v _ _ _ - -                        \\ _ _ /              ^^^^         __/                 ");
