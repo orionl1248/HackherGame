@@ -142,7 +142,15 @@ public class Game {
                     }
                     break;
                 case 4: //slot case
-                System.out.println("");
+                    System.out.println("How much money do you want to bet?");
+                    int bet = input.nextInt();
+                    while(bet <1 || bet > player.money){
+                        System.out.println("Enter a valid amount.");
+                        bet = input.nextInt();
+                    }
+                    Slot slot = new Slot(bet);
+                    slot.move();
+                    System.out.println(slot);
                     break;
                 case 5: //case for exiting game
                     run = false;

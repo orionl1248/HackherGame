@@ -63,5 +63,11 @@ public class Slot {
           for (int i = 0; i < 3; i++){
               sb.append(machine[i]);
           }
+          if (output-input >=0){
+            sb.append("\n Money Gained: ");
+          }else{
+            sb.append("\n Money Lost: ");
+          }
+          sb.append(output-input);
           return sb.toString();}
 }
