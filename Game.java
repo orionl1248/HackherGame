@@ -197,11 +197,19 @@ public class Game {
                     break;
                 case 3: //brings up shop, can buy powerups, shows money as well
                     System.out.println("Welcome to the Shop!");
+                    Thread.sleep(900);
                     System.out.println("You have $" + player.money + " to spend.");
+                    Thread.sleep(900);
+                    if (player.money <= 0){
+                        System.out.println("The slots got you again? Try earning some more money & coming back later.");
+                        Thread.sleep(1200);
+                        break;
+                    }
                     System.out.println("Here are the options: ");
                     for (int i = 0; i < shop.size(); i++) {
                         System.out.println("Item " + (i+1) + ": " + shop.get(i));
                     }
+                    Thread.sleep(1700);
                     System.out.println("Do you want to buy anything? Enter the item number to buy it. (Or select 5 for none)");
                     choice = -1;
                     while(choice <1 || choice > 4){
@@ -235,6 +243,7 @@ public class Game {
                             break;   
                         case 5:
                             System.out.println("Leaving the shop...");
+                            Thread.sleep(400);
                             break;
                         default:
                             System.out.println("Invalid input.");                
@@ -243,6 +252,8 @@ public class Game {
                 case 4: //slot case
                     System.out.println("How much money do you want to bet?");
                     int bet = input.nextInt();
+                    if(player.money <= 0){
+                    System.out.println("These slots got you again? Try earning some more money & coming back later.");}
                     while(bet <1 || bet > player.money){
                         System.out.println("Enter a valid amount.");
                         bet = input.nextInt();
