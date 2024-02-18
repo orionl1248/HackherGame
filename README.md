@@ -5,7 +5,7 @@ Contributors:
 Orion Le (Computer Science 2027)
 Andy Chen (Undecided Engineering 2027)
 Elizabeth Edminster (Informatics 2027)
-Adrianna Caraeni (Computer Science 2027)
+Adriana Caraeni (Computer Science 2027)
 Alexander DuToit (Physics 2027)
 
 General Overview: 
