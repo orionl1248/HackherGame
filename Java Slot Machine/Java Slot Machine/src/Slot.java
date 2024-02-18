@@ -50,7 +50,7 @@ public class Slot {
         machine[2] = set_symbol(col3);
 
         if (col1 == col2 && col1 == col3){
-            constant = 4;
+            constant = (int)(4+input*.1);
         }else if(col1==col2 || col1==col3 || col2==col3){
             constant = 1;
         }else{constant = 0;}
