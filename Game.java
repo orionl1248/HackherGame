@@ -36,7 +36,7 @@ public class Game {
                     System.out.println("You have chosen to continue.");
                     System.out.println("Travelling in progress...");
                     System.out.println(player.pace);
-                    System.out.println("You have advanced " + pace.get(player.pace) + " mi." + " You are now at " + player.calculateDistance(pace.get(player.pace)) + " mi.");
+                    System.out.println("You have advanced " + (pace.get(player.pace) + player.speed) + " mi." + " You are now at " + player.calculateDistance(pace.get(player.pace) + player.speed) + " mi.");
                     break;
                 case 2: //case for changing pace
                     choice = -1;
@@ -96,21 +96,53 @@ public class Game {
                             break;
                     }
                     break;
-                case 3: //brings up shop, can buy powerups/vehicles, shows money as well
+                case 3: //brings up shop, can buy powerups, shows money as well
                     System.out.println("Welcome to the Shop!");
+                    System.out.println("You have $" + player.money + " to spend.");
                     System.out.println("Here are the options: ");
                     for (int i = 0; i < shop.size(); i++) {
                         System.out.println("Item " + (i+1) + ": " + shop.get(i));
                     }
-                    System.out.println("Do you want to buy anything? Enter the item number to buy it.");
+                    System.out.println("Do you want to buy anything? Enter the item number to buy it. (Or select 5 for none)");
                     choice = -1;
                     while(choice <1 || choice > 4){
                         System.out.println("Enter a valid choice.");
                         choice = input.nextInt();
                     }
+                    switch(choice){
+                        case 1: 
+                            System.out.println("You have purchased Cucumber Lemonade. You gain 9 health and pay $10.");
+                            player.money = player.money -10;
+                            player.health = player.health +9;
+                            break;
+                        case 2: 
+                            System.out.println("You have purchased Halloween Lobster. You gain 24 health and pay $20.");
+                            player.money = player.money -20;
+                            player.health = player.health +24;
+                            break;    
+                        case 3: 
+                            System.out.println("You have purchased \"It's 11:58 as you're running to Worcester.\" You lose 1 health, gain 5 speed and pay $25.");
+                            player.money = player.money -20;
+                            player.health = player.health -2;
+                            player.speed = player.speed +5;
+                            break;  
+                        case 4: 
+                            System.out.println("You have purchased Cute Umass Ducks.");
+                            System.out.println("Unfortunately, they attack you mercillessly. You lose " + (player.health-1) + " health and pay $100.");
+                            
+                            player.money = player.money -100;
+                            player.health = 1;
+                            System.out.println(player.money);
+                            break;   
+                        case 5:
+                            System.out.println("Leaving the shop...");
+                            break;
+                        default:
+                            System.out.println("Invalid input.");                
+                    }
                     break;
-                case 4:
-                System.out.println("")
+                case 4: //slot case
+                System.out.println("");
                 case 5: //case for exiting game
                     run = false;
                     System.out.println("Thanks for playing :D");

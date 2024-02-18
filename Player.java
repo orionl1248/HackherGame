@@ -1,6 +1,7 @@
 public class Player {
     public int money;
     public int health;
+    public int speed;
     public int distance;
     public int pace;
     public int baseMoneyBuff;
@@ -13,6 +14,7 @@ public class Player {
     Player(String name){
         money = 100;
         health = 100;
+        speed = 0;
         distance = 0;
         pace = 0;
         baseMoneyBuff = 1;
