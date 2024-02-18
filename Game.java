@@ -143,6 +143,7 @@ public class Game {
                     break;
                 case 4: //slot case
                 System.out.println("");
+                    break;
                 case 5: //case for exiting game
                     run = false;
                     System.out.println("Thanks for playing :D");
