@@ -1,27 +1,28 @@
 This is our to-do List:
 
 Lore/text:
-- Starting Lore
+X Starting Lore
 - Ending Lore
-- Instructions at beginning
+X Instructions at beginning
 - Add pauses in the story
 
 Art:
+- Map
 
 WebApp:
 - More professional version of console
 
 Slots:
-- Update algorithm
+X Update algorithm
 
 Random events:
 - Make More!! 
 
 Shop:
-- Make More!!
-- Organize (sorry orion)
+X Make More!!
+X Organize (sorry orion)
 
 Travel Log:
-- Add to Vegas vs UMass lore
+X Add to Vegas vs UMass lore
 
 Other:

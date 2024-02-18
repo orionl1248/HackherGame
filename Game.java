@@ -89,9 +89,9 @@ public class Game {
                 System.out.println("Option 4: Put your fate back in the hands of the lotto gods & spin to try to make it big");
                 Thread.sleep(1000);
                 System.out.println("Option 5: Give up & live in the midwest forever  \033[3m(ugh)\033[0m");
+                Thread.sleep(8000);
+                System.out.println("\nStrap on your hiking boots & Get ready!");
                 Thread.sleep(1000);
-                System.out.println("Strap on your hiking boots & Type anything to continue!");
-                String useless = input.nextLine();
                 break;
             case 2:
                 break;
@@ -111,10 +111,8 @@ public class Game {
                 case 1: //case for continuing on
                     System.out.println("You have chosen to continue.");
                     System.out.println("Travelling in progress...");
-                    System.out.println(player.pace);
                     //random event ***
                     RandomEventChance = Math.random();
-                    System.out.println(RandomEventChance);
                     if (RandomEventChance <= 0.3){
                         RandomEvent n = new RandomEvent(player.eventLuckRizz, player.distance);
                         player.distance = n.distance;
@@ -238,7 +236,9 @@ public class Game {
                     slot.move();
                     player.money += (slot.output-slot.input);
                     System.out.println(slot);
-                    System.out.println("Your current money is: "+ player.money);
+                    Thread.sleep(900);
+                    System.out.println("\nYour current money is: "+ player.money);
+                    Thread.sleep(900);
                     break;
                 case 5: //case for exiting game
                     run = false;
@@ -251,7 +251,7 @@ public class Game {
             }
 
             if(run){
-                System.out.println("W-O-W! What a journey.");
+                System.out.println("\n\nW-O-W! What a journey.\n");
                 Thread.sleep(700);
                 System.out.println("I missed those Towers,");
                 Thread.sleep(900);
