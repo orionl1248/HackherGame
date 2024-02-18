@@ -1,11 +1,11 @@
 public class DetailedGooseArt {
-    public static void main(String[] args) {
+    public void goodLuckGoose() {
         System.out.println("        +++++++                  ");
         System.out.println("     ++++++++++++                ");
         System.out.println("    +++    +++++++               ");
         System.out.println("    ++++++++++++++++++++         ");
         System.out.println("    ++          ++++++           ");
-        System.out.println("     |___    ||| |               ");
+        System.out.println("     |___    []  |               ");
         System.out.println(" ____/   |__     |               ");
         System.out.println("/__________/    /                ");
         System.out.println("       |       |                 ");
@@ -13,8 +13,8 @@ public class DetailedGooseArt {
         System.out.println("    __/         \\____        _/\\ ");
         System.out.println("  _/                 \\    __/   |");
         System.out.println(" /                    \\_/      | ");
-        System.out.println("|         /                   /  ");
-        System.out.println("|        |                   |  ");
+        System.out.println("|         /                    /  ");
+        System.out.println("|        |                    |  ");
         System.out.println(" \\        |________/       __/   ");
         System.out.println("   \\                 ____/       ");
         System.out.println("     \\ _____________/            ");
