@@ -1,13 +1,16 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 266fb3fcd95a044b9cd99462db6c1caf91e4f75b
 public class Game {
 
     public static void main(String[] args)  throws InterruptedException{
         double RandomEventChance = 0.0;
-        int WinningDistance = 2645;
+        int WinningDistance = 863; //Look up founding year
         int HealthDrain = 1;
         Scanner input = new Scanner(System.in);
         boolean run = true;
@@ -20,6 +23,7 @@ public class Game {
         shop.add("Halloween Lobster ($20)");
         shop.add("It's 11:58 as you're running to Worcester ($25)");
         shop.add("Cute UMass geese ($100, Mystery Effect ;) ");//buy this and lose health;
+        shop.add("High Housing Lottery Number ($50)");
         
 
         //START OF STORY
@@ -213,7 +217,7 @@ public class Game {
                     Thread.sleep(1700);
                     System.out.println("Do you want to buy anything? Enter the item number to buy it. (Or select 5 for none)");
                     choice = -1;
-                    while(choice <1 || choice > 4){
+                    while(choice <1 || choice > 5){
                         System.out.println("Enter a valid choice.");
                         choice = input.nextInt();
                     }
@@ -244,6 +248,12 @@ public class Game {
                             player.health = 1;
                             break;   
                         case 5:
+                            System.out.println("You have purchased \"High Housing Lottery Number.\" You lose 1 health, gain 2 luck and pay $50.");
+                            player.money = player.money -50;
+                            player.health = player.health -1;
+                            player.eventLuckRizz = player.eventLuckRizz +2;
+                            break;
+                        case 6:
                             System.out.println("Leaving the shop...");
                             Thread.sleep(400);
                             break;

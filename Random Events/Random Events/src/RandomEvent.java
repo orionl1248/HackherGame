@@ -20,6 +20,7 @@ public class RandomEvent {
         }
 
         this.distance = (int) (distance + .1*(distance*multiplier) + luck*.1);
+        this.luck = (int)(multiplier*((event+1)*.1));
     }
 
     private double event4() {
