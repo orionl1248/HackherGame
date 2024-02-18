@@ -104,7 +104,10 @@ public class Game {
                     }
                     System.out.println("Do you want to buy anything? Enter the item number to buy it.");
                     choice = -1;
-
+                    while(choice <1 || choice > 4){
+                        System.out.println("Enter a valid choice.");
+                        choice = input.nextInt();
+                    }
                     break;
                 case 4:
                 System.out.println("")
