@@ -1,7 +1,7 @@
 # HackherGame
 Hello Welcome to our 2024 UMass HackHer project!
 
-~~Contributers~~
+Contributors:
 Orion Le (Computer Science 2027)
 Andy Chen (Undecided Engineering 2027)
 Elizabeth Edminster (Informatics 2027)
