@@ -1,9 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 
 public class Game {
-    public static void main(String[] args) {
+    int RandomEventChance = 0;
+
+    public static void main(String[] args)  throws InterruptedException{
         Scanner input = new Scanner(System.in);
         boolean run = true;
         ArrayList<Integer> pace = new ArrayList<Integer>();
@@ -16,7 +19,10 @@ public class Game {
         shop.add("It's 11:58 as you're running to Worcester ($25)");
         shop.add("Cute UMass geese ($100, Mystery Effect ;) ");//buy this and lose health;
         
-
+        System.out.println("...what?");
+        Thread.sleep(1000);
+        System.out.println("...How did I get here?");
+        Thread.sleep(1000);
         System.out.println("What is your name?");
         String name = input.nextLine();
         Player player = new Player(name);
@@ -150,7 +156,9 @@ public class Game {
                     }
                     Slot slot = new Slot(bet);
                     slot.move();
+                    player.money += (slot.output-slot.input);
                     System.out.println(slot);
+                    System.out.println("Your current money is: "+ player.money);
                     break;
                 case 5: //case for exiting game
                     run = false;

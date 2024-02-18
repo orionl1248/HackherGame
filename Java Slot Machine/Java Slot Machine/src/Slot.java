@@ -60,9 +60,14 @@ public class Slot {
 
     public String toString(){
         StringBuilder sb = new StringBuilder();
+          sb.append("\nS L O T");
+          sb.append("\n-------\n");
+          sb.append("|");
           for (int i = 0; i < 3; i++){
               sb.append(machine[i]);
+              sb.append("|");
           }
+          sb.append("\n-------\n");
           if (output-input >=0){
             sb.append("\n Money Gained: ");
           }else{
