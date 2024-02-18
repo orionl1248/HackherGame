@@ -1,5 +1,5 @@
 public class SmallGooseAttack {
-    public void firstGooseAttack() {
+    public static void firstGooseAttack() {
         System.out.println("                      /|                           ");
         System.out.println("           _|__      / |     /|   _---_            ");
         System.out.println("         -/-+-/ \\___/  /    / |  |____|\\___        ");

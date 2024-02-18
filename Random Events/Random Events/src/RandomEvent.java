@@ -26,6 +26,7 @@ public class RandomEvent {
         System.out.println("Your current luck is: "+luck);
         System.out.println("Goose of Good Luck gives you a ride. You gain lots of distance!!");
         double x = 2;
+        DetailedGooseArt.goodLuckGoose();
         return x;
     }
 

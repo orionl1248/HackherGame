@@ -6,8 +6,7 @@ public class Game {
 
     public static void main(String[] args)  throws InterruptedException{
         double RandomEventChance = 0.0;
-        int WinningDistance = 100;
-        int HealthDrain = 1;
+        int WinningDistance = 2645;
         Scanner input = new Scanner(System.in);
         boolean run = true;
         ArrayList<Integer> pace = new ArrayList<Integer>();
@@ -24,7 +23,7 @@ public class Game {
         //START OF STORY
         System.out.println("...ugh...");
         Thread.sleep(1200);
-        System.out.println("**You wake up, head on the concrete, poker chips in hand, and your tie knotted around your forehead...**");
+        System.out.println("\033[3mYou wake up, head on the concrete, poker chips in hand, and your tie knotted around your forehead...\033[0m");
         Thread.sleep(2550);
         System.out.println("...what?");
         Thread.sleep(1200);
@@ -58,10 +57,10 @@ public class Game {
         Thread.sleep(2000);
         System.out.println("What does that road sign say anyways?");
         Thread.sleep(800);
-        System.out.println("Sign: \033[3m\"You are starting at " + player.distance + "m. You have "+ (WinningDistance-player.distance) + "m to go\"\033[0m");
+        System.out.println("Sign: \033[3m\"You are starting at " + player.distance + "mi. You have "+ (WinningDistance-player.distance) + "mi to go\"\033[0m");
         Thread.sleep(2700);
         System.out.println("Damn...");
-        Thread.sleep(800);
+        Thread.sleep(1000);
         System.out.println("And I thought the walk to Worcester was far.");
         Thread.sleep(1000);
         System.out.println(".");
@@ -272,6 +271,7 @@ public class Game {
                 Thread.sleep(900);
                 System.out.println("But not this weather.");
                 Thread.sleep(900);
+                SmallGooseAttack.firstGooseAttack();
             }
         }
 
