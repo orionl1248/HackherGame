@@ -1,10 +1,10 @@
 
 public class Slot {
     public static final String dollar = "$";
-    public static final String S = "S";
-    public static final String a = "A";
-    public static final String b = "B";
-    public static final String c = "C";
+    public static final String S = "+";
+    public static final String a = "#";
+    public static final String b = "~";
+    public static final String c = "@";
     public static final String Base = "?";
 
     String[] machine; 
