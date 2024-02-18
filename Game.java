@@ -240,7 +240,7 @@ public class Game {
                             player.speed = player.speed +5;
                             break;  
                         case 4: 
-                            System.out.println("You have purchased Cute Umass Ducks.");
+                            System.out.println("You have purchased Cute Umass Ducks. (Surprise!)");
                             System.out.println("Unfortunately, they attack you mercillessly. You lose " + (player.health-1) + " health and pay $100.");
                             
                             player.money = player.money -100;
@@ -290,27 +290,27 @@ public class Game {
 
             if(run){
                 System.out.println("\n\nW-O-W! What a journey.\n");
-                Thread.sleep(700);
+                Thread.sleep(1200);
                 System.out.println("I missed those cute campus pond ducks.");
-                Thread.sleep(900);
+                Thread.sleep(1300);
                 System.out.println("But not this weather.");
-                Thread.sleep(900);
+                Thread.sleep(1000);
                 SmallGooseAttack.firstGooseAttack();
                 System.out.println("AHHHH");
                 Thread.sleep(2000);
                 System.out.println("Where am I?");
-                Thread.sleep(900);
+                Thread.sleep(2000);
 
                 System.out.println("Am I... \033[3min a hospital bed?\033[0m");
-                Thread.sleep(900);
+                Thread.sleep(2000);
                 System.out.println("Wait... what is that?!?");
                 Thread.sleep(2000);
                 GooseAttack.finalGooseAttack();
                 Thread.sleep(1000);
                 System.out.println("\033[3m screams\033[0m");
-                Thread.sleep(200);
+                Thread.sleep(500);
                 System.out.println("\033[3m in\033[0m");
-                Thread.sleep(200);
+                Thread.sleep(500);
                 System.out.println("\033[3m HORROR\033[0m");
 
 
