@@ -1,5 +1,5 @@
 public class DetailedGooseArt {
-    public void goodLuckGoose() {
+    public static void goodLuckGoose() {
         System.out.println("        +++++++                  ");
         System.out.println("     ++++++++++++                ");
         System.out.println("    +++    +++++++               ");
