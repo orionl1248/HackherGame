@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Random Events.Random Events.src.RandomEvent; Events.Random Events.src.RandomEvent; Events.Random Events.src.RandomEvent;
 
 
 public class Game {
@@ -61,7 +60,9 @@ public class Game {
         System.out.println("What does that road sign say anyways?");
         Thread.sleep(800);
         System.out.println("Sign: \033[3m\"You are starting at " + player.distance + "mi. You have "+ (WinningDistance-player.distance) + "mi to go\"\033[0m");
-        Thread.sleep(2700);
+        Thread.sleep(350);
+        MapImage.Map();
+        Thread.sleep(4700);
         System.out.println("Damn...");
         Thread.sleep(1000);
         System.out.println("And I thought the walk to Worcester was far.");
