@@ -6,7 +6,7 @@ public class Player {
     public int baseMoneyBuff;
     public int moneyBuff;
     public int moneyDebuff;
-    public int eventLuckRizz;
+    public int eventLuckRizz; //ew
     public String name;
 
 
@@ -18,7 +18,7 @@ public class Player {
         baseMoneyBuff = 1;
         moneyBuff=1;
         moneyDebuff =1;
-        eventLuckRizz = 1;
+        eventLuckRizz = 1; //ew
     }
     public void calculateMoney(boolean win, int bet){
         if(win == false){

@@ -25,9 +25,9 @@ public class Game {
         while (run){
             System.out.println(run);
             int choice = -1;
-            System.out.println("Please Choose: Continue(1), Change Pace(2), Shop(3), Exit(4) ");
+            System.out.println("Please Choose: Continue(1), Change Pace(2), Shop(3), Try your luck (4), Exit(5) ");
             choice = input.nextInt();
-            while(choice <1 || choice > 4){
+            while(choice <1 || choice > 5){
                 System.out.println("Enter a valid choice.");
                 choice = input.nextInt();
             }
@@ -106,7 +106,9 @@ public class Game {
                     choice = -1;
 
                     break;
-                case 4: //case for exiting game
+                case 4:
+                System.out.println("")
+                case 5: //case for exiting game
                     run = false;
                     System.out.println("Thanks for playing :D");
                     break;
