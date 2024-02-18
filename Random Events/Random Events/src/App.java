@@ -1,5 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        RandomEvent n = new RandomEvent(20, 10);
+        System.out.println(n);
     }
 }
