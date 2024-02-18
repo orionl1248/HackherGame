@@ -1,11 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 266fb3fcd95a044b9cd99462db6c1caf91e4f75b
 public class Game {
 
     public static void main(String[] args)  throws InterruptedException{
