@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class Slot {
     public static final String Cash = "$";
@@ -42,9 +41,9 @@ public class Slot {
     }
 
     public void move() {
-        col1 = (int)(Math.random()*4);
-        col2 = (int)(Math.random()*4);
-        col3 = (int)(Math.random()*4);
+        col1 = (int)(Math.random()*5);
+        col2 = (int)(Math.random()*5);
+        col3 = (int)(Math.random()*5);
 
         machine[0] = set_symbol(col1);
         machine[1] = set_symbol(col2);
